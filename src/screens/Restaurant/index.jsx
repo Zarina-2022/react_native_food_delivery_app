@@ -173,7 +173,7 @@ const Restaurant = ({route, navigation}) => {
               <Text
                 style={{
                   ...FONTS.body3,
-                  color: COLORS.darygray,
+                  color: COLORS.darkgray,
                 }}>
                 {item.calories.toFixed(2)} cal
               </Text>
@@ -188,8 +188,8 @@ const Restaurant = ({route, navigation}) => {
     const dotPosition = Animated.divide(scrollX, SIZES.width);
 
     return (
-      <View style={{height: 30}}>
-        <View style={restaurantStyles.caloriesCont}>
+      <View style={{height: 50,}}>
+        <View style={restaurantStyles.dotsCont}>
           {restaurant?.menu.map((item, index) => {
             const opacity = dotPosition.interpolate({
               inputRange: [index - 1, index, index + 1],

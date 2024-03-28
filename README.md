@@ -55,4 +55,4 @@ Overall, the project is structured to develop a cross-platform mobile applicatio
 
 # Screen gif:
 
-![]()
+![](food-delivery-screen.gif)

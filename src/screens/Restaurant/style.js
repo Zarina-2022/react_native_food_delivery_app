@@ -108,7 +108,7 @@ export const restaurantStyles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    height: SIZES.padding,
+    padding: 10,
   },
 
   // Render Order
