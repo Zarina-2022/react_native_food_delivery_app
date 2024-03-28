@@ -1,79 +1,58 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+It is a mobile application developed using React Native for food delivery. Here's a general overview:
 
-# Getting Started
+1. **Features**:
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+   - The application likely allows users to browse nearby restaurants, view their menus, and place orders for delivery.
+   - Users may be able to create accounts, sign in, and manage their profiles, including saving delivery addresses and payment methods.
+   - It may include features such as order tracking, real-time updates on order status, and notifications.
 
-## Step 1: Start the Metro Server
+2. **Components**:
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+   - The project contains several components such as `Home`, `OrderDelivery`, and `Restaurant`, suggesting that it encompasses different screens or views within the app.
+   - Each component likely corresponds to a specific part of the user interface, such as the home screen, order details screen, and restaurant details screen.
 
-To start Metro, run the following command from the _root_ of your React Native project:
+3. **Navigation**:
 
-```bash
-# using npm
-npm start
+   - React Navigation is used for navigation between different screens/components within the application.
+   - Navigation logic is implemented in `App.jsx`, which serves as the entry point of the application.
 
-# OR using Yarn
-yarn start
-```
+4. **Styling**:
 
-## Step 2: Start your Application
+   - The project includes style sheets (`style.js`) for defining the visual appearance of various components.
+   - Styles are likely applied using inline styles or by referencing style objects defined in these style sheets.
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+5. **Assets**:
 
-### For Android
+   - Image assets are provided in the `assets` directory, which likely includes icons, restaurant images, and other graphical elements used throughout the app.
+   - Constants such as colors, fonts, and other design-related variables are defined in `constants.js`.
 
-```bash
-# using npm
-npm run android
+6. **Configuration**:
 
-# OR using Yarn
-yarn android
-```
+   - Configuration files such as `babel.config.js` and `metro.config.js` are present to configure the development environment and build process.
+   - The `package.json` file lists all dependencies required for the project, including React Native, React Navigation, and any other third-party libraries.
 
-### For iOS
+7. **Platform-specific code**:
+   - The project includes directories for Android and iOS, containing platform-specific configuration files and native code.
+   - Native code written in Java/Kotlin (for Android) and Objective-C/Swift (for iOS) is used to integrate React Native with the respective platforms and access native device features.
 
-```bash
-# using npm
-npm run ios
+8. **Dependencies**:
 
-# OR using Yarn
-yarn ios
-```
+- @react-navigation/bottom-tabs: Version ^6.5.20
+- @react-navigation/native: Version ^6.1.17
+- @react-navigation/stack: Version ^6.3.29
+- react: Version 18.2.0
+- react-native: Version 0.73.6
+- react-native-gesture-handler: Version ^2.15.0
+- react-native-iphone-x-helper: Version ^1.3.1
+- react-native-maps: Version ^1.11.3
+- react-native-maps-directions: Version ^1.9.0
+- react-native-reanimated: Version ^3.8.1
+- react-native-safe-area-context: Version ^4.9.0
+- react-native-screens: Version ^3.30.1
+- react-native-svg: Version ^15.1.0
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+Overall, the project is structured to develop a cross-platform mobile application for food delivery, leveraging React Native to provide a native-like user experience on both Android and iOS devices.
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+# Screen gif:
 
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+![]()
